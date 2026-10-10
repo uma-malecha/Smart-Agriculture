@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Agriculture Advisor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                Smart Agriculture 🌱
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="crops.html">Crop Advisor</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Smart Agriculture Advisor</h1>
+
+            <p>
+                AI Powered Farming Assistant that helps farmers with
+                weather updates, crop recommendation, fertilizer advice
+                and disease detection.
+            </p>
+
+            <a href="services.html" class="btn">
+                Explore Services
+            </a>
+
+
+
+            <div class="upload-box">
+
+                <h3>🌿 Upload Plant Image</h3>
+
+                <p class="upload-text">
+                    पौधे या फसल की साफ फोटो upload करें
+                </p>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                >
+
+                <br><br>
+
+                <button
+                    class="btn"
+                    type="button"
+                    onclick="uploadImage()">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Analyze Image
+
+                </button>
+
+
+                <div class="preview-container">
+
+                    <img
+                        id="preview"
+                        alt="Plant Preview"
+                    >
+
+                </div>
+
+
+                <!-- RESULT -->
+                <div
+                    id="result"
+                    class="result-box">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+    <section class="features">
+
+        <h2>Our Smart Agriculture Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-seedling"></i>
+
+                <h3>Crop Advisor</h3>
+
+                <p>
+                    Get suitable crop recommendations.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Water Advice</h3>
+
+                <p>
+                    Get irrigation guidance for your crop.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-wheat-awn"></i>
+
+                <h3>Fertilizer Advice</h3>
+
+                <p>
+                    Get fertilizer and nutrient recommendations.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-bug"></i>
+
+                <h3>Disease Detection</h3>
+
+                <p>
+                    Upload a crop image for disease analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Smart Agriculture Advisor | Made for Farmers 🌱
+        </p>
+
+    </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
